@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homewotk weather app</title>
+  <!--bootstrap css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <!-- front css a youtuber showed me pretty cool right  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--jumbo title-->
+  <div class="jumbotron" >
+    <h1> <strong>WEATHER API FORECAST</strong></h1>
+    </div>
+    <div class ="container">
+      <!--this row will be for searching city/ place-->
+      <div class="row">
+        <div class="col-sm-4 bg-light">
+          <!-- HTML to handle the imputs-->
+          <h4 class="pt-1"><strong>SEARCH FOR A CITY!!</strong></h4>
+          <!--text box or a city name-->
+                <div class="imput-group mb-3">
+                  <imput type="text" class="search-button" id="user-imput">
+                    <div class="input-group-append">
+                      <button class="btn bg-primary text-light" id="search-button"><i class="fa fa-search">
+</i></button>
+                    </div>
+                      </div>
+                       <!--NEW CITY info-->
+                <button class=" btn btn-primary" type="button" id="clear-history">Clear history</button>
+                <ul class="list-group">
+
+                </ul>
+            </div>   
+            <div class="col-sm-8">
+                <div class="row ml-2 ">
+                    <div class="col-sm-12" id="current-weather">
+                        <h3 class="city-name mb-1 mt-2 bolder" id="current-city"></h3>
+                        <p>Temperature:<span class="current" id="temperature"></span></p>
+                        <p>Humidity:<span class="current" id="humidity"></span></p> 
+                        <p>Wind Speed:<span class="current" id="wind-speed"></span></p>
+                        <p>UV index:<span class="current bg-danger rounded py-2 px-2 text-white" id="uv-index">
+        </span></p> 
+      </div>
+    </div>
+    <!--Row for the new information-->
+    <div class="col-sm-12" id ="future-weather">
+        <h3>5-Day FORECASTT:</h3>
+        <div class="row text-light">
+            <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded" >
+                <p id="fDate1"></p>
+                <p id="fImg1"></p>
+                <p>temperature:<span id="fTemp1"></span></p>
+                <p>Humidity:<span id="fHumidity1"></span></p>
+            </div>
+            <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded" >
+                <p id="fDate2"></p>
+                <p id="fImg2"></p>
+                <p>temperature:<span id="fTemp2"></span></p>
+                <p>Humidity:<span id="fHumidity2"></span></p>
+            </div>
+            <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                <p id="fDate3"></p>
+                <p id="fImg3"></p>
+                <p>temperature:<span id="fTemp3"></span></p>
+                <p>Humidity:<span id="fHumidity3"></span></p>
+            </div>
+            <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                <p id="fDate4"></p>
+                <p id="fImg4"></p>
+                <p>temperature:<span id="fTemp4"></span></p>
+                <p>Humidity:<span id="fHumidity4"></span></p>
+            </div>
+            <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded" >
+                <p id="fDate5"></p>
+                <p id="fImg5"></p>
+                <p>temperature:<span id="fTemp5"></span></p>
+                <p>Humidity:<span id="fHumidity5"></span></p>
+            </div>
+        </div>
+    </div>
+      <footer class="mt-5 p-3 text-center bg-loght">
+        <p>weather Dashboard By Bic 2022</p>
+      </footer>
+</div>
+</div>
+</div>
+<!--jQuery JS-->
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+<!--Code to Jvascript File-->
+<script src="script.js"></script>
+</body>
+</html>
