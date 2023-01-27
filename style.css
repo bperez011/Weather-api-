@@ -1,26 +1,20 @@
 body {
+    font-weight: 200;
     font-size: 22px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-h1 {
-background-color: lightsteelblue;
+button{
+    -webkit-text-fill-color: white;
+    background-color: lightskyblue;
+    cursor: pointer;
 }
 
-h3 {
-    font-weight : italic bold;
-
+h2{
+    -webkit-text-fill-color: balck;
 }
 
-span{
-    font-size: 1em;
-}
-
-li:hover {
-    background-color: black;
-}
-
-footer{
-    margin-bottom: auto;
-    background-color: lightsteelblue;
+h1{
+    background-color: darkblue;
+    -webkit-text-fill-color: white;
 }
